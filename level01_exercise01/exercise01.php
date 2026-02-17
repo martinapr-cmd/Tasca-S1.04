@@ -2,7 +2,6 @@
 
 require_once "Employee.php"; 
 
-
 $Emp1 = new Employee("Mark", 8000);
 $Emp1->get_details(); 
 
