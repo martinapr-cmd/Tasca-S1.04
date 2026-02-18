@@ -1,7 +1,7 @@
 <?php
 
-require_once "Rectangle.php";
-require_once "Triangle.php";
+require_once "Classes/Rectangle.php";
+require_once "Classes/Triangle.php";
 
 $rectangle = new Rectangle (50, 30);
 echo "Rectangle's area: " . $rectangle->getArea() . "cm²\n";

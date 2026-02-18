@@ -2,8 +2,8 @@
 
 class Employee {
 
-public $name; 
-public $wage; 
+private string $name; 
+private int $wage; 
 
 
 public function __construct(string $name, int $wage) {
@@ -11,20 +11,16 @@ public function __construct(string $name, int $wage) {
     $this->wage = $wage;
 }
 
-public function get_details() {
+public function getDetails(): string {
     if ($this->wage >= 6000) {
-        echo "Employee's name is " . $this->name
+        return "Employee's name is " . $this->name
          . " and their wage is " . $this->wage . " so they need to pay taxes.\n";
     } else {
-        echo "Employee's name is " . $this->name
+        return "Employee's name is " . $this->name
          . " and their wage is " . $this->wage . " so they don't need to pay taxes.\n";
     }
 }
 
 }
-
-
-
-
 
 ?>
