@@ -9,9 +9,10 @@ echo "Current face: " . $dice1->getFace() . "\n";
 
 
 $diceArray = [];
+define('DICE_AMOUNT', 5);
 
 // Create 5 dice and roll them
-for ($i = 0; $i < 5; $i++) {
+for ($i = 0; $i < DICE_AMOUNT; $i++) {
     $diceArray[] = new PokerDice();
 }
 
@@ -21,6 +22,4 @@ for ($i = 0; $i < count($diceArray); $i++) {
 
 // Show total rolls
 echo "Total rolls: " . PokerDice::getTotalRolls();
-
-
 ?>

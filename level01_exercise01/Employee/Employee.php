@@ -18,7 +18,7 @@ public function getDetails(): string {
     } else {
         return "Employee's name is " . $this->name
          . " and their wage is " . $this->wage . " so they don't need to pay taxes.\n";
-    }
+    } 
 }
 
 }
